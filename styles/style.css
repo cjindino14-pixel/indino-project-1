@@ -132,3 +132,30 @@ body {
     );
     color: white;
 }
+
+/* ANIMATED RGB BACKGROUND */
+body {
+    background: linear-gradient(
+        -45deg,
+        #09001f,
+        #170044,
+        #001f4d,
+        #3b005e,
+        #09001f
+    );
+    background-size: 400% 400%;
+    animation: rgbBackground 12s ease infinite;
+    color: #ffffff;
+}
+
+@keyframes rgbBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
